@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Act:</b>
+  <%= @performer.act %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @performer.name %>
+</p>
+
+<p>
+  <b>Rate:</b>
+  <%= @performer.rate %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @performer.email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @performer.phone %>
+</p>
+
+<p>
+  <b>Nationality:</b>
+  <%= @performer.nationality %>
+</p>
+
+<p>
+  <b>Passport:</b>
+  <%= @performer.passport %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @performer.website %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @performer.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_performer_path(@performer) %> |
+<%= link_to 'Back', performers_path %>

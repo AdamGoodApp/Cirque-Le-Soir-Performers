@@ -1,0 +1,39 @@
+<h1>Listing performers</h1>
+
+<table>
+  <tr>
+    <th>Act</th>
+    <th>Name</th>
+    <th>Rate</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Nationality</th>
+    <th>Passport</th>
+    <th>Website</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @performers.each do |performer| %>
+  <tr>
+    <td><%= performer.act %></td>
+    <td><%= performer.name %></td>
+    <td><%= performer.rate %></td>
+    <td><%= performer.email %></td>
+    <td><%= performer.phone %></td>
+    <td><%= performer.nationality %></td>
+    <td><%= performer.passport %></td>
+    <td><%= performer.website %></td>
+    <td><%= performer.description %></td>
+    <td><%= link_to 'Show', performer %></td>
+    <td><%= link_to 'Edit', edit_performer_path(performer) %></td>
+    <td><%= link_to 'Destroy', performer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Performer', new_performer_path %>
